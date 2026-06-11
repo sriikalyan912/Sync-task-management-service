@@ -42,3 +42,8 @@ app.*.map.json
 /android/.gradle/
 /android/local.properties
 /android/key.properties
+
+# Generated plugin registrants
+**/GeneratedPluginRegistrant.java
+**/GeneratedPluginRegistrant.h
+**/GeneratedPluginRegistrant.m

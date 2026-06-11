@@ -99,7 +99,9 @@ class _SummaryCard extends StatelessWidget {
         children: [
           Text(
             'Spent this month',
-            style: TextStyle(color: colorScheme.onPrimary.withOpacity(0.8)),
+            style: TextStyle(
+              color: colorScheme.onPrimary.withValues(alpha: 0.8),
+            ),
           ),
           const SizedBox(height: 4),
           Text(
@@ -148,7 +150,10 @@ class _SummaryStat extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label, style: TextStyle(color: color.withOpacity(0.8), fontSize: 12)),
+        Text(
+          label,
+          style: TextStyle(color: color.withValues(alpha: 0.8), fontSize: 12),
+        ),
         Text(
           value,
           style: TextStyle(color: color, fontWeight: FontWeight.w600),

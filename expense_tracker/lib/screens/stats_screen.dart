@@ -245,7 +245,7 @@ class _DailyBarChart extends StatelessWidget {
                   backDrawRodData: BackgroundBarChartRodData(
                     show: true,
                     toY: maxY,
-                    color: colorScheme.primary.withOpacity(0.06),
+                    color: colorScheme.primary.withValues(alpha: 0.06),
                   ),
                 ),
               ],

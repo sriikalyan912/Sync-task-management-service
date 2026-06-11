@@ -186,7 +186,7 @@ class _UpiPaymentScreenState extends State<UpiPaymentScreen> {
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<int>(
-              value: _categoryId,
+              initialValue: _categoryId,
               decoration: const InputDecoration(
                 labelText: 'Category',
                 border: OutlineInputBorder(),

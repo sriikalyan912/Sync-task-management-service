@@ -54,7 +54,7 @@ class ExpenseTile extends StatelessWidget {
       onDismissed: (_) => provider.deleteExpense(expense.id!),
       child: ListTile(
         leading: CircleAvatar(
-          backgroundColor: category.color.withOpacity(0.15),
+          backgroundColor: category.color.withValues(alpha: 0.15),
           child: Icon(category.icon, color: category.color),
         ),
         title: Text(expense.title, maxLines: 1, overflow: TextOverflow.ellipsis),

@@ -105,14 +105,14 @@ class _QrScannerScreenState extends State<QrScannerScreen> {
           MobileScanner(
             controller: _controller,
             onDetect: _onDetect,
-            errorBuilder: (context, error, child) => Center(
+            errorBuilder: (context, error, child) => const Center(
               child: Padding(
-                padding: const EdgeInsets.all(24),
+                padding: EdgeInsets.all(24),
                 child: Text(
                   'Camera unavailable.\n'
                   'Please grant camera permission to scan QR codes.',
                   textAlign: TextAlign.center,
-                  style: const TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
@@ -134,7 +134,7 @@ class _QrScannerScreenState extends State<QrScannerScreen> {
               'You will be redirected to your UPI app to pay, and the '
               'payment is tracked here.',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white.withOpacity(0.85)),
+              style: TextStyle(color: Colors.white.withValues(alpha: 0.85)),
             ),
           ),
         ],
